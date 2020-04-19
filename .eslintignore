@@ -1,0 +1,7 @@
+.nyc_output
+coverage
+dist
+example
+node_modules
+vendor
+*.min.js

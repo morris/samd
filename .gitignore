@@ -1,0 +1,5 @@
+.nyc_output
+coverage
+draft
+node_modules
+*.gz

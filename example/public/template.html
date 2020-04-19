@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SAMD Example App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    ${process.env.SCRIPT_SRC === 'unpkg' ? `
+    <script src="https://unpkg.com/samd@1/samd.js" crossorigin></script>
+    <script src="https://unpkg.com/moment@2/moment.js" crossorigin></script>
+    <script src="https://unpkg.com/lodash@4/lodash.js" crossorigin></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="scripts/dist/app.js"></script>
+    `.trim() : ''} ${process.env.SCRIPT_SRC === 'vendor' ? `
+    <script src="scripts/vendor/samd.min.js"></script>
+    <script src="scripts/vendor/moment.min.js"></script>
+    <script src="scripts/vendor/lodash.min.js"></script>
+    <script src="scripts/vendor/react.production.min.js"></script>
+    <script src="scripts/vendor/react-dom.production.min.js"></script>
+    <script src="scripts/dist/app.js"></script>
+    `.trim() : ''} ${process.env.SCRIPT_SRC === 'bundle' ? `
+    <script src="scripts/dist/bundle.min.js"></script>
+    `.trim() : ''}
+    <script>
+      require(['scripts/index'], function (index) {
+        index.render();
+      });
+    </script>
+  </body>
+</html>

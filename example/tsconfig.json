@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "module": "AMD",
+    "target": "ES3",
+    "lib": ["ES2015", "DOM"],
+    "outFile": "public/scripts/dist/app.js",
+    "rootDir": "public",
+    "baseUrl": "public/scripts"
+  },
+  "include": ["public/scripts"]
+}

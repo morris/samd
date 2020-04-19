@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <title>SAMD Test App</title>
+  </head>
+  <body>
+    <h1>SAMD Test App</h1>
+    <form method="GET" action="/">
+      <p>
+        <label>
+          Script <code>defer</code> probability<br />
+          <input type="text" name="pdefer" value="%%pdefer%%" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Script <code>async</code> probability<br />
+          <input type="text" name="pasync" value="%%pasync%%" />
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="compat" value="1" %%compat%% />
+          Compatibility Mode
+        </label>
+      </p>
+      <p>
+        <button type="submit">Run</button>
+      </p>
+    </form>
+
+    %%body%%
+  </body>
+</html>
