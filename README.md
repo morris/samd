@@ -172,6 +172,8 @@ compatible with the web platform.
 - Loading of scripts is handled and optimized by the browser.
 - Production optimizations are progressive and don't impact development.
 - Bundling is (almost) reduced to simple concatenation.
+- Bundling does not require configuration; simple shell scripts are sufficient
+  and provide more flexibility.
 
 At any point of the workflow, it is advised to measure page load performance
 and user experience, and only proceed optimizing if needed.
