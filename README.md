@@ -22,7 +22,7 @@ An example project can be inspected under `/example`.
 SAMD enables inclusion of UMD/AMD modules in regular `script` tags:
 
 ```html
-<script src="https://unpkg.com/samd@1/samd.js" crossorigin></script>
+<script src="https://unpkg.com/samd@1/dist/samd.js" crossorigin></script>
 <script async src="https://unpkg.com/moment@2/moment.js" crossorigin></script>
 <script async src="https://unpkg.com/lodash@4/lodash.js" crossorigin></script>
 <!-- more UMD/AMD dependencies... -->
@@ -56,7 +56,7 @@ e.g. [unpkg](https://unpkg.com/):
 
 ```html
 <div id="root"></div>
-<script src="https://unpkg.com/samd@1/samd.js" crossorigin></script>
+<script src="https://unpkg.com/samd@1/dist/samd.js" crossorigin></script>
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 <!-- more UMD/AMD dependencies... -->
@@ -91,7 +91,7 @@ bundle may be minified through [terser](https://terser.org/).
 
 ```html
 <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch,Promise" crossorigin></script>
-<script src="https://unpkg.com/samd@1/samd.min.js" crossorigin></script>
+<script src="https://unpkg.com/samd@1/dist/samd.min.js" crossorigin></script>
 <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 <script src="scripts/dist/app.min.js"></script>
