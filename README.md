@@ -162,7 +162,7 @@ Note that his only has to be done in bundling scenarios.
 SAMD is only useful for applications.
 Packages for the web should be distributed as UMD for maximum compatibility.
 
-## Notes
+## Conclusion
 
 The presented TypeScript/SAMD-based workflow has useful properties and is fully
 compatible with the web platform.
@@ -178,7 +178,7 @@ compatible with the web platform.
 At any point of the workflow, it is advised to measure page load performance
 and user experience, and only proceed optimizing if needed.
 
-### Limitations
+## Limitations
 
 - Dependencies must provide AMD/UMD builds.
 - Multiple versions of dependencies are not supported.
