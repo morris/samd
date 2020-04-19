@@ -17,6 +17,8 @@ SAMD may be used as an alternative to traditional JS bundling
 This is the main use case for SAMD, as described below.
 An example project can be inspected under `/example`.
 
+[Try the example online](https://rawcdn.githack.com/morris/samd/0.1.0/example/public/index.html)
+
 ## Usage
 
 SAMD enables inclusion of UMD/AMD modules in regular `script` tags:
