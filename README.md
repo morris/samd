@@ -1,7 +1,7 @@
 # SAMD
 
 A tiny, static [AMD](https://github.com/amdjs/amdjs-api) API implementation
-that enables including __AMD modules in regular script tags.__
+that allows __including AMD modules in regular script tags.__
 
 *SAMD is currently experimental/awaiting feedback.*
 
@@ -167,11 +167,11 @@ Packages for the web should be distributed as UMD for maximum compatibility.
 The presented TypeScript/SAMD-based workflow has useful properties and is fully
 compatible with the web platform.
 
-- Works with modern ES6/TypeScript projects, with little implications
+- Works with modern ES6/TypeScript projects, with little implications.
 - Wide browser compatibility (even Internet Explorer)
-- Loading of scripts is handled and optimized by the browser
-- Production optimizations are progressive and don't impact development
-- Bundling is (almost) reduced to simple concatenation
+- Loading of scripts is handled and optimized by the browser.
+- Production optimizations are progressive and don't impact development.
+- Bundling is (almost) reduced to simple concatenation.
 
 At any point of the workflow, it is advised to measure page load performance
 and user experience, and only proceed optimizing if needed.
