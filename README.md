@@ -157,7 +157,7 @@ samd -o scripts/dist/bundle.js \
 terser scripts/dist/bundle.js -o scripts.dist.bundle.js
 ```
 
-Note that his only has to be done in bundling scenarios.
+Note that this only has to be done in bundling scenarios.
 
 ### Libraries
 
