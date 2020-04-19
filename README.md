@@ -1,9 +1,9 @@
 # SAMD
 
 A tiny, static [AMD](https://github.com/amdjs/amdjs-api) API implementation
-that __enables including AMD modules in regular `script` tags.__
+that enables including __AMD modules in regular script tags.__
 
-*SAMD is currently experimental, and awaiting feedback.*
+*SAMD is currently experimental/awaiting feedback.*
 
 - __1.3 KB__ minified & gzipped
 - No dynamic loading; all scripts are __loaded by the browser__
@@ -17,7 +17,7 @@ SAMD may be used as an alternative to traditional JS bundling
 This is the main use case for SAMD, as described below.
 An example project can be inspected under `/example`.
 
-## Basic usage
+## Usage
 
 SAMD enables inclusion of UMD/AMD modules in regular `script` tags:
 
@@ -33,7 +33,7 @@ SAMD enables inclusion of UMD/AMD modules in regular `script` tags:
 </script>
 ```
 
-No additional script loader or special markup is required.
+No additional script loading or special markup is required.
 
 ## Usage with TypeScript
 
@@ -62,7 +62,7 @@ e.g. [unpkg](https://unpkg.com/):
 <!-- more UMD/AMD dependencies... -->
 <script src="scripts/dist/app.js"></script>
 <script>
-  // assuming the entrypoint is index.ts/index.js and it exports an init() function:
+  // assuming the entry point is index.ts/index.js and it exports an init() function:
   require(["scripts/index"], function (index) {
     index.init();
   });
@@ -90,7 +90,7 @@ dependencies should be used. Polyfills may be included using e.g.
 bundle may be minified through [terser](https://terser.org/).
 
 ```html
-<script src="https://polyfill.io/v3/polyfill.min.js" crossorigin></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch,Promise" crossorigin></script>
 <script src="https://unpkg.com/samd@1/samd.min.js" crossorigin></script>
 <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
@@ -160,15 +160,15 @@ Note that his only has to be done in bundling scenarios.
 ### Libraries
 
 SAMD is only useful for applications.
-Packages for web usage should be distributed as UMD for maximum compatibility.
+Packages for the web should be distributed as UMD for maximum compatibility.
 
-## Conclusion
+## Notes
 
 The presented TypeScript/SAMD-based workflow has useful properties and is fully
 compatible with the web platform.
 
-- Works with modern ES6/TypeScript codebases, with little implications
-- Wide browser compatibility
+- Works with modern ES6/TypeScript projects, with little implications
+- Wide browser compatibility (even Internet Explorer)
 - Loading of scripts is handled and optimized by the browser
 - Production optimizations are progressive and don't impact development
 - Bundling is (almost) reduced to simple concatenation
