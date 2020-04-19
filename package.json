@@ -1,11 +1,12 @@
 {
   "name": "samd",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A tiny, static AMD API implementation",
   "author": "Morris Brodersen <mb@morrisbrodersen.de>",
   "license": "ISC",
   "files": [
-    "dist",
+    "dist/samd.js",
+    "dist/samd.min.js",
     "lib"
   ],
   "bin": {
