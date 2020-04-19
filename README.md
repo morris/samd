@@ -1,7 +1,7 @@
 # SAMD
 
 A tiny, static [AMD](https://github.com/amdjs/amdjs-api) API implementation
-that enables including AMD modules in regular `script` tags.
+that __enables including AMD modules in regular `script` tags.__
 
 *SAMD is currently experimental, and awaiting feedback.*
 
