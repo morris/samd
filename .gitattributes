@@ -1,2 +1,3 @@
 * text=auto eol=lf
+dist/* linguist-vendored=false
 example/** linguist-vendored
