@@ -224,7 +224,7 @@
             })
           );
       } catch (err) {
-        if (!timedOut && err.message.startsWith('Undefined module')) {
+        if (!timedOut && err.message.slice(0, 16) === 'Undefined module') {
           if (!pending) defineCallbacks.push(callback);
           pending = true;
 

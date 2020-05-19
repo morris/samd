@@ -1,6 +1,6 @@
 {
   "name": "samd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny, static AMD API implementation",
   "author": "Morris Brodersen <mb@morrisbrodersen.de>",
   "license": "ISC",
@@ -24,11 +24,11 @@
     "prepublish": "npm run lint && npm run format-check"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "express": "^4.17.1",
-    "mocha": "^7.1.1",
+    "mocha": "^7.1.2",
     "nyc": "^15.0.1",
-    "prettier": "^2.0.4",
-    "terser": "^4.6.11"
+    "prettier": "^2.0.5",
+    "terser": "^4.7.0"
   }
 }
